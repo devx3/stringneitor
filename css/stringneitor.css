@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html {
+	font: 100%/1.5em Helvetica, Arial, Sans-serif;
+}
+
+body{
+	background: #EEE;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	background: #FF4C4C;
+	box-shadow: -1px -1px 5px #999;
+	-webkit-box-shadow: -1px -1px 5px #999;
+	-moz-box-shadow: -1px -1px 5px #999;
+}
+
+.container .columns.one			{ width: 6.25%;  }
+.container .columns.two			{ width: 12.5%;  }
+.container .columns.three		{ width: 18.75%; }
+.container .columns.four		{ width: 25%;	 }
+.container .columns.five		{ width: 31.25%; }
+.container .columns.six			{ width: 37.5%;  }
+.container .columns.seven		{ width: 43.75%; }
+.container .columns.eight		{ width: 50%; 	 }
+.container .columns.nine		{ width: 56.25%; }
+.container .columns.ten			{ width: 100%; 	 }
+.container .columns.eleven		{ width: 68.75%; }
+.container .columns.twelve		{ width: 75%; 	 }
+.container .columns.thirteen	{ width: 81.25%; }
+.container .columns.fourteen	{ width: 87.5%;  }
+.container .columns.fifteen		{ width: 93.75%; }
+.container .columns.sixteen		{ width: 100%; 	 }
+
+label {
+	display:block;
+}
+
+input[type=text]{
+	margin: 0.2em 0 1em 0;
+	width: 50%;
+	height: 2em;
+	border: dashed 1px #400000;
+}
+
+/*
+Conteúdo
+*/
+.container header{
+	padding: 2em;
+	font-size: 1.8em;
+	background: #BF0000;
+	color: #FFF;
+}
+
+.container form {
+	margin: 1em;
+}
+
+.container footer {
+	text-align: center;
+	background: #BF0000;
+	color: #FFF;
+	padding: 1em;
+}
+
+.container #lengthNoSpacing {
+	color: #FFF;
+	font-weight: bold;
+}

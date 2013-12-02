@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Stringnêitor - Utilidades para strings</title>
+
+	<link rel="stylesheet" href="css/stringneitor.css" />
+
+	<script type="text/javascript">
+	
+		function noSpacing(){
+			var s = document.getElementById('stringNoSpacing').value;
+			
+			s = s.replace(/(\.)+/g, '');
+
+			document.getElementById('resultNoSpacing').value = s;
+
+			var maxCaracter = 44;
+
+
+			var resultado = document.getElementById('lengthNoSpacing').innerHTML = maxCaracter - s.length;
+			//console.info(resultado);
+
+			
+
+			//document.getElementById('lengthNoSpacing').innerHTML = s.length;
+		}
+
+	</script>
+</head>
+<body>
+<div class="container">
+
+	<div class="row">
+		<header class="columns sixteen">
+			<h1>Stringnêitor &trade;</h1>
+		</header>	
+	</div>
+
+		<form name="semSpacing">
+
+			<p>
+				<label for="stringNoSpacing">Contador de código de barra: </label>
+				<input type="text" id="stringNoSpacing" name="stringNoSpacing" onkeyup="noSpacing();" />
+				<span id="lengthNoSpacing"></span>
+			</p>
+
+			<p>
+				<input type="text" id="resultNoSpacing" name="resultNoSpacing" readonly="true" />
+			</p>
+			
+
+		</form>
+
+		<footer>
+
+			<h4>Erick Bruno &copy; - Incorporation 2013</h4>
+
+		</footer>
+
+</div> <!-- /container -->	
+</body>	
+</html>
