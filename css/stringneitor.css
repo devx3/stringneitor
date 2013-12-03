@@ -23,6 +23,10 @@ body{
 	-moz-box-shadow: -1px -1px 5px #999;
 }
 
+.columns {
+	padding: 1em;
+}
+
 .container .columns.one			{ width: 6.25%;  }
 .container .columns.two			{ width: 12.5%;  }
 .container .columns.three		{ width: 18.75%; }

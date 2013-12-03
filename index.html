@@ -6,30 +6,10 @@
 
 	<link rel="stylesheet" href="css/stringneitor.css" />
 
-	<script type="text/javascript">
-	
-		function noSpacing(){
-			var s = document.getElementById('stringNoSpacing').value;
-			
-			s = s.replace(/(\.)+/g, '');
-
-			document.getElementById('resultNoSpacing').value = s;
-
-			var maxCaracter = 44;
-
-
-			var resultado = document.getElementById('lengthNoSpacing').innerHTML = maxCaracter - s.length;
-			//console.info(resultado);
-
-			
-
-			//document.getElementById('lengthNoSpacing').innerHTML = s.length;
-		}
-
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<div class="container">
+<div id="container" class="container">
 
 	<div class="row">
 		<header class="columns sixteen">
@@ -37,26 +17,42 @@
 		</header>	
 	</div>
 
-		<form name="semSpacing">
+		<form name="formNoSpacing">
 
 			<p>
 				<label for="stringNoSpacing">Contador de código de barra: </label>
 				<input type="text" id="stringNoSpacing" name="stringNoSpacing" onkeyup="noSpacing();" />
-				<span id="lengthNoSpacing"></span>
+				<span id="lengthNoSpacing">140</span>
 			</p>
 
 			<p>
-				<input type="text" id="resultNoSpacing" name="resultNoSpacing" readonly="true" />
+				<input type="text" id="resultNoSpacing" name="resultNoSpacing" readonly="true" onclick="Seleciona();" />
 			</p>
-			
+			<input type="checkbox" name="termosCompromisso" id="termosCompromisso" />
+			<label for="termosCompromisso">Aceito todas as clausulas que informam que não posso usar desse programa para manipular, estorquir ou matar pessoas.</label>
 
 		</form>
+
+	<div class="columns sixteen">
+
+		<h2>Trocando Coreszinhas! *-*</h2>
+	<form name="trocaCores">
+
+		<input type="radio" name="cor" value="#FFFFFF" onclick="trocaCor();" /> Branco<br />
+		<input type="radio" name="cor" value="#74FFD6" onclick="trocaCor();" /> Verde Claro <br />
+		<input type="radio" name="cor" value="#FF9274" onclick="trocaCor();" /> Bege <br />
+		<input type="radio" name="cor" value="#2DB28B" onclick="trocaCor();" /> Verde <br />
+
+	</form>
+
+	</div>
 
 		<footer>
 
 			<h4>Erick Bruno &copy; - Incorporation 2013</h4>
 
 		</footer>
+
 
 </div> <!-- /container -->	
 </body>	
