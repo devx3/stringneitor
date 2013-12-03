@@ -62,3 +62,21 @@ function trocaCor()
 	container.style.background = document.trocaCores.cor[i].value;
 
 }
+
+function acrLista()
+{
+	var texto = document.listaDeCoisas.acrLista.value;
+	//alert(texto);
+
+	//Verificação para links
+	texto = texto.replace(/\b^www.([a-z]+).([a-z]+).([a-z]+)?\b/g, '<a href=\"http:\/\/$1.$2.$3\">$1.$2.$3<\/a>')
+
+	var lista = document.getElementById('lista');
+	var elemento = document.createElement('LI');
+	var textoNodo = document.createTextNode(texto);
+
+	
+
+	elemento.appendChild(textoNodo);
+	lista.appendChild(elemento);
+}
